@@ -7,7 +7,6 @@ header {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 main {
@@ -17,19 +16,38 @@ main {
   padding-left: 20rem;
 }
 
+/* nav {
+  margin: auto 0;
+} */
+
 nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
   list-style: none;
   margin: 0;
   padding: 0;
+  height: 85vh;
 }
 
 nav a {
   color: inherit;
 }
 
-aside {
-  font-size: 1.125rem;
-  padding: 3rem;
-  flex-basis: 25rem;
-  flex-grow: 1;
+nav a:hover,
+nav a:focus {
+  color: yellowgreen;
+}
+
+.login-link {
+  margin-top: auto;
+  background: yellowgreen;
+  color: black;
+}
+
+.signup-link {
+  margin-bottom: auto;
+  background: steelblue;
+  color: black;
 }
