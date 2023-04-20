@@ -1,0 +1,35 @@
+header {
+  background: black;
+  color: white;
+  padding: 2rem;
+  height: 100vh;
+  width: 15rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  padding: 3rem;
+  flex-basis: 56rem;
+  flex-grow: 2;
+  padding-left: 20rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: inherit;
+}
+
+aside {
+  font-size: 1.125rem;
+  padding: 3rem;
+  flex-basis: 25rem;
+  flex-grow: 1;
+}
