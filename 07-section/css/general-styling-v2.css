@@ -40,32 +40,43 @@ select {
   font: inherit;
 }
 
+.flex-layout {
+  display: flex;
+}
+
 .container {
   padding: 0 2em;
   max-width: 52rem;
   margin: 0 auto;
 }
 
-.flow > * + * {
+/* .flow > * + * {
   margin-top: var(--flow-space, 1em);
-}
+} */
 
 .logo {
   width: 10rem;
   margin-bottom: 1rem;
 }
 
+nav li {
+  margin: 0 1em;
+}
+
+d.card {
+  padding: 1.5rem;
+  border: 3px solid black;
+}
+
 nav ul {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-nav li {
-  margin: 0 1em;
+  height: 85vh;
 }
 
 nav a {
@@ -77,7 +88,14 @@ nav a:focus {
   color: yellowgreen;
 }
 
-.card {
-  padding: 1.5rem;
-  border: 3px solid black;
+.login-link {
+  margin-top: auto;
+  background: yellowgreen;
+  color: black;
+}
+
+.signup-link {
+  margin-bottom: auto;
+  background: steelblue;
+  color: black;
 }
