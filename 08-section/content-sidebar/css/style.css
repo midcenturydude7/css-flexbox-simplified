@@ -21,8 +21,23 @@ main {
 }
 
 aside {
-  flex-basis: 20rem;
-  flex-grow: 1;
   border: 4px solid black;
   padding: 1em;
+}
+.adaptable-sidebar {
+  flex-basis: 20rem;
+  flex-grow: 1;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.adaptable-sidebar > .card {
+  flex-basis: 1%;
+  flex-grow: 1;
+}
+
+.adaptable-sidebar > * {
+  flex-basis: 100%;
 }
